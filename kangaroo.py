@@ -1,10 +1,6 @@
 #!/bin/python3
 
-import math
 import os
-import random
-import re
-import sys
 
 
 # Complete the kangaroo function below.
@@ -21,7 +17,6 @@ def kangaroo(x1, v1, x2, v2):
     else:
         return "NO"
 
-y = product(a, b)
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
