@@ -12,7 +12,7 @@ def kangaroo(x1, v1, x2, v2):
             return "YES"
         else:
             return "NO"
-    elif x_gap%v_rel == 0:
+    elif x_gap % v_rel == 0:
         return "YES"
     else:
         return "NO"
