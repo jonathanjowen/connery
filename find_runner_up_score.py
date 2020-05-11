@@ -8,4 +8,4 @@ if __name__ == '__main__':
     sorted_scores = sorted(scores, reverse=True)
     print(sorted_scores[winners])
 
-# https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/
+# https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem
