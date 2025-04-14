@@ -10,7 +10,7 @@ def read_integer():
 def match_floating_point(string):
     """Returns a match object if string is a floating point number or None otherwise"""       
     floating_point_pattern = r'^[\+\-]?[0-9]*\.[0-9]+$'
-    return re.match(floating_point_pattern, test_string)
+    return re.match(floating_point_pattern, string)
 
     
 if __name__ == '__main__':
