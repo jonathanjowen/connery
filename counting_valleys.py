@@ -52,3 +52,5 @@ if __name__ == '__main__':
     print(result)
 
     # fptr.close()
+
+# https://www.hackerrank.com/challenges/counting-valleys/problem

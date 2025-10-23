@@ -39,4 +39,4 @@ if __name__ == '__main__':
 
     # fptr.close()
 
-    # https://www.hackerrank.com/challenges/drawing-book/problem/
+# https://www.hackerrank.com/challenges/drawing-book/problem/
