@@ -7,13 +7,13 @@ import re
 import sys
 
 def appendAndDelete(s, t, k):
-    common_length = len(os.path.commonprefix([s, t]))
-    deletions = len(s) - common_length
-    appends = len(t) - common_length
-    total_ops = deletions + appends
-    if total_ops == k:
+    common_prefix_length = len(os.path.commonprefix([s, t]))
+    deletions = len(s) - common_prefix_length
+    appends = len(t) - common_prefix_length
+    min_total_ops = deletions + appends
+    if min_total_ops == k:
         is_possible = 'Yes'
-    elif k > total_ops and  (k - total_ops) % 2 == 0:
+    elif k > min_total_ops and  (k - min_total_ops) % 2 == 0:
         is_possible = 'Yes'
     elif k >= len(s) + len(t):
         is_possible = 'Yes'
