@@ -19,8 +19,7 @@ def print_rangoli(size):
     return
 
 if __name__ == '__main__':
-    # n = int(input())
-    n = 5
+    n = int(input())
     print_rangoli(n)
 
 
