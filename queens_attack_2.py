@@ -50,7 +50,7 @@ def queensAttack(board_size, k, queen_y, queen_x, obstacles):
                 moves['DR'] = min(moves['DR'], queen_y - y - 1)
 
     # Sum allowable squares for all queen's moves
-    return sum(moves.values())s
+    return sum(moves.values())
    
 
 if __name__ == '__main__':
