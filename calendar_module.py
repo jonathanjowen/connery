@@ -2,8 +2,7 @@
 
 import calendar
 
-# m, d, y = map(int, input().split())
-m, d, y = map(int, ("08", "05", "2015"))
+m, d, y = map(int, input().split())
 
 day = calendar.weekday(y, m, d)
 
