@@ -4,11 +4,9 @@ from collections import Counter
 from collections import defaultdict
 
 # Read single-line inputs
-# X = int(input())                                        # total shoes in stock
-# shoe_stock = Counter(list(map(int, input().split())))   # stock by shoe size
-# N = int(input())                                        # total customers
-shoe_stock = Counter([2, 3, 4, 5, 6, 8, 7, 6, 5, 18])
-N = 6
+X = int(input())                                        # total shoes in stock
+shoe_stock = Counter(list(map(int, input().split())))   # stock by shoe size
+N = int(input())                                        # total customers
 
 # Create customer shoes dictionary by looping over N customer input lines
 shoes = {}
@@ -21,7 +19,7 @@ for _ in range(N):
     else:
         shoes[shoe_size] = [price]
 
-# Initiate sales total then toop through shoes adding price to total sales
+# Initiate sales total then loop through shoes adding price to total sales
 sales = 0
 for shoe in shoes:
     customers = len(shoes[shoe])                 # potential sales for shoe size
@@ -30,3 +28,6 @@ for shoe in shoes:
     sales = sales + sum(shoes[shoe][:n_sales])
     
 print(sales)
+
+
+# https://www.hackerrank.com/challenges/collections-counter/problem
