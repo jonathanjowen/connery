@@ -10,8 +10,7 @@ from collections import Counter
 
 
 if __name__ == '__main__':
-    # s = input()
-    s = 'caabbbcde'
+    s = input()
     s_sorted = ''.join(sorted(s))
     chr_counter = Counter()
     chr_counter.update(s_sorted)
