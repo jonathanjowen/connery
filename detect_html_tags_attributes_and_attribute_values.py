@@ -3,6 +3,8 @@
 from html.parser import HTMLParser
 import re
 
+
+
 class MyHTMLParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         print(tag)
@@ -10,10 +12,12 @@ class MyHTMLParser(HTMLParser):
             print("->", attr[0], '>', attr[1])
  
 
+
 def read_integer():
     """Return an integer read from STDIN."""
     return(int(input()))
     
+
 
 if __name__ == '__main__':
     n_of_html_lines = read_integer()
