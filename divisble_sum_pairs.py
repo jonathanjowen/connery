@@ -1,45 +1,41 @@
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
 import itertools
 
-#
-# Complete the 'divisibleSumPairs' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts following parameters:
-#  1. INTEGER n
-#  2. INTEGER k
-#  3. INTEGER_ARRAY ar
-#
+
 
 def divisibleSumPairs(n, k, ar):
-    # Write your code here
+
+    """
+    Docstring for divisibleSumPairs
+    
+    :param n:   INTEGER length of ar
+                2 <= n <= 100
+    :param k:   INTEGER divisor
+                1 <= k <= 100
+    :param ar:  INTEGER_ARRAY of n integers
+                1 <= ar[i] <= 100                          
+    """
+    
     pairs = itertools.combinations((ar), 2)
     divisible_by_k = [pair for pair in pairs if sum(pair)%k == 0]
     return len(divisible_by_k)
 
+
+
 if __name__ == '__main__':
-    # fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    # first_multiple_input = input().rstrip().split()
-    input_1 = "6 3"
-    first_multiple_input = input_1.rstrip().split()
-
+    first_multiple_input = input().rstrip().split()
     n = int(first_multiple_input[0])
-
     k = int(first_multiple_input[1])
 
-    # ar = list(map(int, input().rstrip().split()))
-    input_2 = "1 3 2 6 1 2"
-    ar = list(map(int, input_2.rstrip().split()))
+    ar = list(map(int, input().rstrip().split()))
 
+    print()
     result = divisibleSumPairs(n, k, ar)
-
-    # fptr.write(str(result) + '\n')
-    # fptr.close()
+    print('OUTPUT')
     print(result)
+
+
+
+# https://www.hackerrank.com/challenges/divisible-sum-pairs/problem
